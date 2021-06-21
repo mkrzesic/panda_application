@@ -33,7 +33,7 @@ public class PandaApplicationSeleniumTest {
         capabilities.setPlatform(Platform.LINUX);
 
         // Odwołujemy się do zdalnego silnika Firefox z Selenium Grid
-        driver = new RemoteWebDriver(new URL("http://seleniumhub-compose:4444/wd/hub"), capabilities);
+        driver = new RemoteWebDriver(new URL("http://192.168.44.44:4444/wd/hub"), capabilities);
 
         // Pamiętaj, że aplikacja Spring musi działać!
         driver.get(String.format("http://ubuntu-compose:%s/", port));
