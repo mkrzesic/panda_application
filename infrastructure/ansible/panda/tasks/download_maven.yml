@@ -11,6 +11,7 @@
       - libssl-dev
       - zlib1g-dev
       - python3-pip
+    update_cache: yes
   connection: local
 - name: install lxml
   command: "pip3 install lxml"
